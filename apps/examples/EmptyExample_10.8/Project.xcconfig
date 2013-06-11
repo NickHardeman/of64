@@ -1,0 +1,13 @@
+//THE PATH TO THE ROOT OF OUR OF PATH RELATIVE TO THIS PROJECT.
+//THIS NEEDS TO BE DEFINED BEFORE CoreOF.xcconfig IS INCLUDED
+OF_PATH = ../../..
+
+//THIS HAS ALL THE HEADER AND LIBS FOR OF CORE
+#include "../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig"
+
+//HEADER_JSON_CPP = "src/jsoncpp-src-0.5.0/include"
+//HEADER_CURL     = "addons/ofxCurl/src/include_llvm-gcc_x86_64"
+//CURL_LIB        = "addons/ofxCurl/lib/mac/llvm-gcc_x86_64/libcurl.a"
+
+OTHER_LDFLAGS = $(OF_CORE_LIBS) 
+HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS) 
